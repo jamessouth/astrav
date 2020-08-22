@@ -7,7 +7,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/tehsphinx/astrav"
+	"github.com/jamessouth/astrav"
 )
 
 var (
