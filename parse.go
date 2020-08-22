@@ -1,6 +1,7 @@
 package astrav
 
 import (
+	"fmt"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -28,6 +29,7 @@ import (
 //
 func Parse(fset *token.FileSet, root http.FileSystem, dir string, filter func(os.FileInfo) bool,
 	mode parser.Mode) (pkgs map[string]*ast.Package, fileSources map[string][]byte, first error) {
+	fmt.Println("hello from dsouth fork")
 	fd, err := root.Open(dir)
 	if err != nil {
 		return nil, nil, errors.WithStack(err)
